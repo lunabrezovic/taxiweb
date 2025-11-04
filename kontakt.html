@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – Taxi Diz</title>
+  <meta name="description" content="Kontaktirajte Taxi Diz Karlovac i Krk putem telefona, WhatsAppa, Instagrama, Facebooka ili e-maila. Dostupni smo 0-24.">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Ikone (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<nav>
+  <div class="menu-toggle" id="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="nav-list">
+    <li><a href="index.html">Početna</a></li>
+    <li><a href="usluge.html">Usluge</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="karlovac.html">Taxi Karlovac</a></li>
+    <li><a href="krk.html">Taxi Krk</a></li>
+    <li><a href="jastrebarsko.html">Taxi Jastrebarsko</a></li>
+  </ul>
+</nav>
+<script>
+const mobileMenu = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+mobileMenu.addEventListener('click', () => {
+  navList.classList.toggle('active');
+});
+</script>
+  <!-- KONTAKT SEKCIJA -->
+  <section class="kontakt-section">
+    <h2>Kontaktirajte nas</h2>
+
+    <div class="kontakt-grid">
+      <!-- Lijevi stupac -->
+      <div class="kontakt-info">
+        <div class="kontakt-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <p><strong>Karlovac:</strong> <a href="tel:+385912777717">+385 91 277 7717</a></p>
+        </div>
+
+        <div class="kontakt-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <p><strong>Krk:</strong> <a href="tel:+385916378777">+385 91 637 8777</a></p>
+        </div>
+      </div>
+
+      <!-- Desni stupac s ikonama -->
+      <div class="kontakt-ikone">
+        <a href="https://wa.me/385912777717" target="_blank" title="WhatsApp Karlovac">
+          <i class="fa-brands fa-whatsapp"></i><span>WhatsApp Karlovac</span>
+        </a>
+
+        <a href="https://wa.me/385916378777" target="_blank" title="WhatsApp Krk">
+          <i class="fa-brands fa-whatsapp"></i><span>WhatsApp Krk</span>
+        </a>
+
+        <a href="https://www.instagram.com/taxi_diz/" target="_blank" title="Instagram">
+          <i class="fa-brands fa-instagram"></i><span>@taxi_diz</span>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61551151557973" target="_blank" title="Facebook">
+          <i class="fa-brands fa-facebook"></i><span>Taxi DIZ – Karlovac</span>
+        </a>
+
+        <a href="mailto:diztaxi@gmail.com" title="E-mail">
+          <i class="fa-solid fa-envelope"></i><span>diztaxi@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Taxi Diz - Sva prava pridržana</p>
+  </footer>
+
+</body>
+</html>
